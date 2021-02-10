@@ -11,3 +11,7 @@ Sales Weekly: [100400.0, 1000.0]
 Time and Date: 10/02/2021, 14:29:32
 Exceeded target: 0
 Sales Weekly: [50.0, 50.0]
+-----------------------------------------------------------------
+Time and Date: 10/02/2021, 14:44:21
+Exceeded weekly target: 2 salespeople.
+Sales Weekly: [21400.0, 105000.0]
