@@ -3,6 +3,7 @@ Anthony Quinn X00138635
 08/02/2021
 Lab 2 Exercises
 """
+import time
 
 weekly_target = float(input("Weekly Target: "))
 
@@ -54,3 +55,13 @@ for i in range(len(all_targets)):
         individual_exceeded = sales_weekly[i] - all_targets[i]
         print("Salesperson ", i+1, " exceeded their individual target by ", individual_exceeded)
 
+time_string = time.strftime("%d/%m/%Y, %H:%M:%S")
+
+
+text_file = open("output.txt", "a")
+text_file.write("\n")
+text_file.write("-" * 65)
+text_file.write("\nTime and Date: {}".format(time_string))
+text_file.write("\nExceeded weekly target: {} salespeople.".format(exceeded))
+text_file.write("\nSales Weekly: {}".format(sales_weekly))
+text_file.close()
